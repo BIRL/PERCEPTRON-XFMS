@@ -1,0 +1,12 @@
+R.matlab v3.7.0 (2022-08-25 21:52:34 UTC) successfully loaded. See ?R.matlab for help.
+
+Attaching package: 'R.matlab'
+
+The following objects are masked from 'package:base':
+
+    getOption, isOpen
+
+There were 50 or more warnings (use warnings() to see the first 50)
+> proc.time()
+   user  system elapsed 
+  40.67    0.76   42.03 

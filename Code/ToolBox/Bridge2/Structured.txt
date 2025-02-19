@@ -1,0 +1,15 @@
+residue	degree_normalized_averaged	degree_normalized_not-averaged	degree_not-normalized_averaged	degree_not-normalized_not-averaged	betweenness_normalized_averaged	betweenness_normalized_not-averaged	betweenness_not-normalized_averaged	betweenness_not-normalized_not-averaged
+A-ARG-18	0.2	0.2	2.2	2.2	0.03	0.03	2.0	2.0
+A-ARG-22	0.08	0.08	1.1	1.1	0.0	0.0	0.0	0.0
+A-ASN-32	0.08	0.08	1.1	1.1	0.0	0.0	0.0	0.0
+A-ASN-62	0.08	0.08	1.1	1.1	0.0	0.0	0.0	0.0
+A-ASP-12	0.08	0.08	1.1	1.1	0.0	0.0	0.0	0.0
+A-ASP-13	0.08	0.08	1.1	1.1	0.0	0.0	0.0	0.0
+A-ASP-38	0.08	0.08	1.1	1.1	0.0	0.0	0.0	0.0
+A-ASP-57	0.08	0.08	1.1	1.1	0.0	0.0	0.0	0.0
+A-GLU-35	0.2	0.2	2.2	2.2	0.03	0.03	2.0	2.0
+A-GLU-37	0.08	0.08	1.1	1.1	0.0	0.0	0.0	0.0
+A-GLU-5	0.08	0.08	1.1	1.1	0.0	0.0	0.0	0.0
+A-LYS-109	0.08	0.08	1.1	1.1	0.0	0.0	0.0	0.0
+A-THR-112	0.08	0.08	1.1	1.1	0.0	0.0	0.0	0.0
+A-THR-115	0.08	0.08	1.1	1.1	0.0	0.0	0.0	0.0

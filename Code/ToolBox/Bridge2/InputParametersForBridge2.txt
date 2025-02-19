@@ -1,0 +1,2 @@
+D:/PerceptronXfmsInputFolder/07e26b3e-ffe2-47ab-bc4f-99ee576fe72b/MiscInputFiles/PDB.pdb
+D:/PerceptronXfmsResultFolder/Result_07e26b3e-ffe2-47ab-bc4f-99ee576fe72b/ResultsBridge.xlsx
