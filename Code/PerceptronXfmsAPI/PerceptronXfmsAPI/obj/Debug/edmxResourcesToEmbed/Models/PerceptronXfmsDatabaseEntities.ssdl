@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="PerceptronXfmsDatabaseModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="ResultsVisualize">
+    <Key>
+      <PropertyRef Name="QueryID" />
+    </Key>
+    <Property Name="QueryID" Type="nchar" MaxLength="50" Nullable="false" />
+    <Property Name="FastaFileInfo" Type="nvarchar(max)" />
+    <Property Name="PeptideInfo" Type="nvarchar(max)" />
+    <Property Name="PfSasaTabXlsFile" Type="nvarchar(max)" />
+    <Property Name="BridgeResultsFile" Type="nvarchar(max)" />
+    <Property Name="SasaMainImageFile" Type="nvarchar(max)" />
+    <Property Name="PfModifiedPdb" Type="nvarchar(max)" />
+    <Property Name="CentralityModifiedPdb" Type="nvarchar(max)" />
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FrustratometerResultFiles" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="SearchResultsFile">
+    <Key>
+      <PropertyRef Name="QueryID" />
+    </Key>
+    <Property Name="QueryID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ZipResultFile" Type="nvarchar(max)" />
+    <Property Name="CreationTime" Type="datetime2" Precision="7" />
+  </EntityType>
+  <EntityType Name="SearchXfmsQuery">
+    <Key>
+      <PropertyRef Name="QueryID" />
+    </Key>
+    <Property Name="QueryID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="UserID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Progress" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="CreationTime" Type="datetime2" Precision="7" Nullable="false" />
+    <Property Name="isBridgeEnabled" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="isFrustratometerEnabled" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="EmailID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Title" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ExpectedCompletionTime" Type="datetime2" Precision="7" />
+    <Property Name="QueuePosition" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityContainer Name="PerceptronXfmsDatabaseModelStoreContainer">
+    <EntitySet Name="ResultsVisualize" EntityType="Self.ResultsVisualize" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SearchResultsFile" EntityType="Self.SearchResultsFile" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SearchXfmsQuery" EntityType="Self.SearchXfmsQuery" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

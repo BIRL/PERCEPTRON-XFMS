@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="PerceptronXfmsDatabaseModelStoreContainer" CdmEntityContainer="PerceptronXfmsDatabaseEntities">
+    <EntitySetMapping Name="ResultsVisualizes">
+      <EntityTypeMapping TypeName="PerceptronXfmsDatabaseModel.ResultsVisualize">
+        <MappingFragment StoreEntitySet="ResultsVisualize">
+          <ScalarProperty Name="QueryID" ColumnName="QueryID" />
+          <ScalarProperty Name="FastaFileInfo" ColumnName="FastaFileInfo" />
+          <ScalarProperty Name="PeptideInfo" ColumnName="PeptideInfo" />
+          <ScalarProperty Name="PfSasaTabXlsFile" ColumnName="PfSasaTabXlsFile" />
+          <ScalarProperty Name="BridgeResultsFile" ColumnName="BridgeResultsFile" />
+          <ScalarProperty Name="SasaMainImageFile" ColumnName="SasaMainImageFile" />
+          <ScalarProperty Name="PfModifiedPdb" ColumnName="PfModifiedPdb" />
+          <ScalarProperty Name="CentralityModifiedPdb" ColumnName="CentralityModifiedPdb" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="FrustratometerResultFiles" ColumnName="FrustratometerResultFiles" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SearchResultsFiles">
+      <EntityTypeMapping TypeName="PerceptronXfmsDatabaseModel.SearchResultsFile">
+        <MappingFragment StoreEntitySet="SearchResultsFile">
+          <ScalarProperty Name="QueryID" ColumnName="QueryID" />
+          <ScalarProperty Name="ZipResultFile" ColumnName="ZipResultFile" />
+          <ScalarProperty Name="CreationTime" ColumnName="CreationTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SearchXfmsQueries">
+      <EntityTypeMapping TypeName="PerceptronXfmsDatabaseModel.SearchXfmsQuery">
+        <MappingFragment StoreEntitySet="SearchXfmsQuery">
+          <ScalarProperty Name="QueryID" ColumnName="QueryID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="Progress" ColumnName="Progress" />
+          <ScalarProperty Name="CreationTime" ColumnName="CreationTime" />
+          <ScalarProperty Name="isBridgeEnabled" ColumnName="isBridgeEnabled" />
+          <ScalarProperty Name="isFrustratometerEnabled" ColumnName="isFrustratometerEnabled" />
+          <ScalarProperty Name="EmailID" ColumnName="EmailID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="ExpectedCompletionTime" ColumnName="ExpectedCompletionTime" />
+          <ScalarProperty Name="QueuePosition" ColumnName="QueuePosition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

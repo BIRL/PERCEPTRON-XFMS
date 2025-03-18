@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="PerceptronXfmsDatabaseModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="ResultsVisualize">
+    <Key>
+      <PropertyRef Name="QueryID" />
+    </Key>
+    <Property Name="QueryID" Type="String" MaxLength="50" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="FastaFileInfo" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="PeptideInfo" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="PfSasaTabXlsFile" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="BridgeResultsFile" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="SasaMainImageFile" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="PfModifiedPdb" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CentralityModifiedPdb" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FrustratometerResultFiles" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="SearchResultsFile">
+    <Key>
+      <PropertyRef Name="QueryID" />
+    </Key>
+    <Property Name="QueryID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ZipResultFile" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CreationTime" Type="DateTime" Precision="7" />
+  </EntityType>
+  <EntityType Name="SearchXfmsQuery">
+    <Key>
+      <PropertyRef Name="QueryID" />
+    </Key>
+    <Property Name="QueryID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="UserID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Progress" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="CreationTime" Type="DateTime" Nullable="false" Precision="7" />
+    <Property Name="isBridgeEnabled" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="isFrustratometerEnabled" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="EmailID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ExpectedCompletionTime" Type="DateTime" Precision="7" />
+    <Property Name="QueuePosition" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityContainer Name="PerceptronXfmsDatabaseEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="ResultsVisualizes" EntityType="Self.ResultsVisualize" />
+    <EntitySet Name="SearchResultsFiles" EntityType="Self.SearchResultsFile" />
+    <EntitySet Name="SearchXfmsQueries" EntityType="Self.SearchXfmsQuery" />
+  </EntityContainer>
+</Schema>
